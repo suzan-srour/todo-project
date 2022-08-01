@@ -1,0 +1,25 @@
+.p1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.p1 {
+    float: left;
+  }
+  
+  .p1 {
+    display: block;
+    padding: 8px;
+    background-color: #defbe002;
+  } 
+
+  .p2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+ }
+ table, th, td {
+  border: 1px solid black;
+}
