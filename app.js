@@ -1,45 +1,61 @@
- 
+ //ask user to enter his/her name 
  var userName=prompt("Enter Your Name") ;
- var age =prompt("Enter Your Age") ; 
- if ( age <=0 ){
-  alert("Age is zero try again") ;}
-
+ 
 
 
  var gender=prompt("Enter Your Gender F/M") ; 
- if (gender==="male")
+ if (gender!="male" && gender !="female")
  {
-alert("Welcom Mr ")+userName ;
- }
-else(gender ==="female")
-{ alert("welcom Ms")+userName;}
+alert("You Have TO Select Between female/male");
+var gender=prompt("Enter Your Gender F/M") ; 
+}
+
+var age =prompt("Enter Your Age") ; 
+ if( age <=0 )
+ {
+  alert("Age is zero try again") ;
+  var age =prompt("Enter Your Age Again")}
+  
 
 
  //
 
  var conf =confirm ("Do you wants to skip the welcoming message") ; 
- if (conf ==="False")
- { alert("Welcome to our website") ;}
+ while(conf==1)
+ {break;
+}
 
-Array={} ;
+if(gender ==="female")
+{alert("Welcome Ms")+userName;
+}
+else
+
+if(gender==="male")
+ {alert("Welcome Mr")+userName;}
+
+else
+ alert ("invalid user");
+ 
+
+//const arr={} ;
  var x=confirm ("Do you like to make online shoping?");
- Array.push(x);
+  //arr.push(x) ;
+
  var y=confirm ("Do you wants to have a discount ticket?");
- Array.push(y) ;
+ //arr.push(y) ;
  var z=confirm ("Do you like our website?"); 
- Array.push(z) ;
-
- Q()
-
+ //arr.push(z)
+/*
  function Q(arr)
  {
-for(let i=0;i<= Array.length;i++)
+for(let i=0;i<= arr.length;i++)
    {
-    if (Array[i]==="Null") { alert("Invalid");} 
+    if (arr[i]==="Null") { alert("Invalid");} 
     else 
   { let t=" ";
- t = Array.reverse();
+ t = arr.reverse();
    }
  }
  console.log(t);
-}
+ }
+*/
